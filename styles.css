@@ -80,7 +80,7 @@ nav button{
     float: right;
     margin-right: 0px;
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: 60%;
     background-position: 80% 60%;
    
 }
@@ -92,6 +92,15 @@ nav button{
     background-repeat: no-repeat;
     background-size: 500px;
     background-position: 5% -1%;
+}
+.heroRes{
+    display: flex;
+    flex-direction: row;
+}
+
+.featureRes{
+    display: flex;
+    flex-direction: row;
 }
 
 .hero p{
@@ -240,7 +249,7 @@ i,button{
     margin-bottom: 40px;
     background-image: url(Frame\ \(2\).png);
     height:508px;
-    width:940px;
+    width:90%;
     margin-left: 160px;
     color: white;
     border-radius: 8px;
@@ -315,14 +324,14 @@ footer button{
     color:white;
     display: inline;
     border-radius: 4px;
-    padding:15px 23px;
+    padding:15px 13px;
     font-weight:600;
 }
 
 .mail{
     background-color:white;
-    height:60px;
-    width:280px;
+    height:50px;
+    width:25%px;
     display: flex;
     align-items: center;
     border-radius: 4px;
@@ -340,13 +349,24 @@ footer button{
 
 
 /* responsiveness */
-@media (max-width:725px){
+@media (max-width:825px){
     .hero,.feature,.advantages,.customized,.testimonials{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    .heroRes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+     
+    
+.featureRes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .features-section{
        margin-left: 90px;
     }
@@ -391,7 +411,7 @@ footer button{
     }
 
     .app{
-        width:650px;
+        width:80%;
         margin-left: 90px;
     }
 
@@ -408,7 +428,10 @@ footer button{
         justify-content: center;
         gap:50px;
         margin-bottom: 10px;
-        width:650px;
+        width:80%;
+    }
+    footer button{
+        padding: 10px 13px;
     }
 
     footer p{
